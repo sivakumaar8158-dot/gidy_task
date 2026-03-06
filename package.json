@@ -1,0 +1,13 @@
+{
+    "name": "gidy_task",
+    "version": "1.0.0",
+    "description": "Root package.json to help Render deploy your backend server.",
+    "engines": {
+        "node": ">=18.0.0"
+    },
+    "scripts": {
+        "postinstall": "cd server && npm install",
+        "build": "echo \"No build required for backend\"",
+        "start": "cd server && npm start"
+    }
+}
