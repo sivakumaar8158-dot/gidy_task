@@ -12,14 +12,14 @@ function App() {
 
   const [profile, setProfile] = useState({ name: 'Sivakumar P', email: 'sivakumaar8158@gmail.com' });
 
-  // Section editing state
+
   const [editSection, setEditSection] = useState(null);
 
-  // Form states
+
   const [editForm, setEditForm] = useState({ name: '', email: '', bio: '' });
   const [formText, setFormText] = useState('');
 
-  // Theme state
+ 
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
   useEffect(() => {
@@ -40,7 +40,7 @@ function App() {
   };
 
   const fetchProfile = () => {
-    fetch('http://localhost:5000/api/profile')
+    fetch('https://gidy-task.onrender.com/api/profile')
       .then(res => res.json())
       .then(data => {
         if (data && data.name) {
@@ -92,7 +92,7 @@ function App() {
     }
 
     try {
-      const res = await fetch('http://localhost:5000/api/profile', {
+      const res = await fetch('https://gidy-task.onrender.com/api/profile', {
         method: 'PUT',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payload),
@@ -185,10 +185,10 @@ function App() {
         </div>
       </nav>
 
-      {/* Main Content */}
+      
       <main className="max-w-5xl mx-auto px-4 mt-8 space-y-6 text-gray-800 dark:text-gray-200">
 
-        {/* Profile Card */}
+       
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100/80 dark:border-gray-700 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden group transition-colors duration-300">
           <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-linear-to-br from-blue-50 dark:from-blue-900/40 to-purple-50 dark:to-purple-900/40 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
 
