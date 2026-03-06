@@ -10,7 +10,7 @@ function App() {
   const [aiBio, setAiBio] = useState('Career goals have not been added yet.');
   const [isGenerating, setIsGenerating] = useState(false);
 
-  const [profile, setProfile] = useState({ name: 'Thanushree Vijayakanth', email: 'thanushree1866@gmail.com' });
+  const [profile, setProfile] = useState({ name: 'Sivakumar P', email: 'sivakumaar8158@gmail.com' });
 
   // Section editing state
   const [editSection, setEditSection] = useState(null);
@@ -179,7 +179,7 @@ function App() {
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path></svg>
             )}
           </button>
-          <div className="w-8 h-8 rounded-full bg-gradient-to-tr from-blue-500 to-indigo-500 text-white flex items-center justify-center font-bold shadow-md cursor-pointer hover:shadow-lg transition-transform hover:scale-105">
+          <div className="w-8 h-8 rounded-full bg-linear-to-tr from-blue-500 to-indigo-500 text-white flex items-center justify-center font-bold shadow-md cursor-pointer hover:shadow-lg transition-transform hover:scale-105">
             S
           </div>
         </div>
@@ -190,12 +190,12 @@ function App() {
 
         {/* Profile Card */}
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100/80 dark:border-gray-700 p-6 md:p-8 flex flex-col md:flex-row items-start md:items-center justify-between gap-6 relative overflow-hidden group transition-colors duration-300">
-          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-gradient-to-br from-blue-50 dark:from-blue-900/40 to-purple-50 dark:to-purple-900/40 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+          <div className="absolute top-0 right-0 -mt-10 -mr-10 w-40 h-40 bg-linear-to-br from-blue-50 dark:from-blue-900/40 to-purple-50 dark:to-purple-900/40 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
 
           <div className="flex flex-col gap-4 relative z-10 w-full mb-2 md:mb-0">
             <div className="flex flex-col md:flex-row items-start md:items-center gap-5">
               <div className="relative">
-                <div className="w-20 h-20 rounded-full bg-gradient-to-br from-yellow-300 to-yellow-500 p-1 shadow-md">
+                <div className="w-20 h-20 rounded-full bg-linear-to-br from-yellow-300 to-yellow-500 p-1 shadow-md">
                   <div className="w-full h-full bg-white dark:bg-gray-800 rounded-full flex items-center justify-center overflow-hidden border-2 border-white dark:border-gray-800 transition-colors">
                     <span className="text-4xl translate-y-1">🧑</span>
                   </div>
@@ -204,13 +204,13 @@ function App() {
               </div>
               <div>
                 <div className="flex items-center gap-3">
-                  <h1 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-gray-900 dark:from-gray-100 to-gray-600 dark:to-gray-400 transition-colors">{profile.name}</h1>
+                  <h1 className="text-2xl md:text-3xl font-bold bg-clip-text text-transparent bg-linear-to-r from-gray-900 dark:from-gray-100 to-gray-600 dark:to-gray-400 transition-colors">{profile.name}</h1>
                   <button onClick={() => handleEditClick('profile')} className="text-xs bg-gray-100 dark:bg-gray-700 hover:bg-gray-200 dark:hover:bg-gray-600 text-gray-700 dark:text-gray-300 px-2 py-1 rounded-md font-semibold transition flex items-center gap-1 border border-gray-200 dark:border-gray-600">
                     <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"></path></svg>
                     Edit
                   </button>
                 </div>
-                <div className="flex items-center gap-2 text-blue-600 dark:text-blue-400 mt-2 hover:opacity-80 transition-opacity cursor-pointer inline-flex">
+                <div className="'inline-flex' items-center gap-2 text-blue-600 dark:text-blue-400 mt-2 hover:opacity-80 transition-opacity cursor-pointer inline-flex">
                   <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   <a href={`mailto:${profile.email}`} className="text-sm font-medium">{profile.email}</a>
                 </div>
@@ -243,7 +243,7 @@ function App() {
           </div>
         </div>
 
-        {/* AI Bio Feature */}
+        
         <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 relative overflow-hidden group transition-colors duration-300">
           <div className="absolute top-4 right-4 text-indigo-400 opacity-10 group-hover:opacity-50 transition-opacity duration-500 transform group-hover:rotate-12 group-hover:scale-110">
             <svg className="w-16 h-16" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2l2.4 7.6H22l-6 4.8 2.3 7.6-6.3-4.8-6.3 4.8 2.3-7.6-6-4.8h7.6L12 2z" opacity="0.3" /><path d="M5 2l1.2 3.8H10l-3 2.4 1.15 3.8L5 9.6 1.85 12 3 8.2 0 5.8h3.8L5 2z" opacity="0.6" /><path d="M19 12l1.2 3.8H24l-3 2.4 1.15 3.8L19 19.6l-3.15 2.4L17 18.2l-3-2.4h3.8L19 12z" opacity="0.4" /></svg>
@@ -269,7 +269,7 @@ function App() {
             </button>
           </div>
 
-          <div className="relative z-10 pt-2 min-h-[60px] flex items-center">
+          <div className="relative z-10 pt-2 min-h-15 flex items-center">
             <p className={`text-[15px] leading-relaxed max-w-4xl transition-colors duration-500 ${aiBio === 'Career goals have not been added yet.' ? 'text-gray-400 dark:text-gray-500 italic' : 'text-gray-700 dark:text-gray-300'}`}>
               {aiBio}
               {isGenerating && <span className="inline-block w-1.5 h-4 ml-1 bg-indigo-500 animate-pulse relative top-0.5"></span>}
@@ -277,10 +277,10 @@ function App() {
           </div>
         </div>
 
-        {/* Bottom Modules */}
+      
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6">
 
-          {/* Left Column (Skills) */}
+         
           <div className="md:col-span-4 bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 flex flex-col h-fit transition-colors duration-300">
             <div className="flex items-center justify-between mb-5">
               <h2 className="font-semibold text-gray-800 dark:text-gray-200 text-lg flex items-center gap-2 transition-colors">
@@ -312,7 +312,7 @@ function App() {
                 >
                   <span>{skill.name}</span>
                   <span className={`
-                    min-w-[20px] h-5 px-1.5 rounded-md flex items-center justify-center text-[11px] font-bold transition-colors
+                    min-w-5 h-5 px-1.5 rounded-md flex items-center justify-center text-[11px] font-bold transition-colors
                     ${skill.endorsedByMe
                       ? 'bg-blue-200 dark:bg-blue-800 text-blue-800 dark:text-blue-200'
                       : 'bg-gray-100 dark:bg-gray-700 text-gray-500 dark:text-gray-400 group-hover:bg-blue-200 dark:group-hover:bg-blue-800 group-hover:text-blue-700 dark:group-hover:text-blue-200'
@@ -331,10 +331,10 @@ function App() {
             </div>
           </div>
 
-          {/* Right Column (Experience Timeline, Education, Certification) */}
+          
           <div className="md:col-span-8 space-y-6">
 
-            {/* Interactive Timeline Experience */}
+            
             <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 transition-colors duration-300">
               <div className="flex items-center justify-between mb-6">
                 <h2 className="font-semibold text-gray-800 dark:text-gray-200 text-lg flex items-center gap-2 transition-colors">
@@ -354,10 +354,10 @@ function App() {
                     onMouseEnter={() => setActiveExp(exp.id)}
                   >
                     {index !== expTimeline.length - 1 && activeExp === exp.id && (
-                      <div className="absolute -left-[2px] top-6 bottom-[-24px] w-[2px] bg-gradient-to-b from-blue-400 dark:from-blue-500 to-transparent"></div>
+                      <div className="absolute -left-0.5 top-6 bottom-6 w-0.5 bg-linear-to-b from-blue-400 dark:from-blue-500 to-transparent"></div>
                     )}
                     <div className={`
-                        absolute -left-[11px] top-1 w-5 h-5 rounded-full border-[3px] transition-all duration-300 z-10
+                        absolute -left-2.75 top-1 w-5 h-5 rounded-full border-[3px] transition-all duration-300 z-10
                         ${activeExp === exp.id
                         ? 'bg-white dark:bg-gray-800 border-blue-500 shadow-[0_0_0_4px_rgba(59,130,246,0.15)] dark:shadow-[0_0_0_4px_rgba(59,130,246,0.3)] scale-110'
                         : 'bg-gray-50 dark:bg-gray-700 border-gray-300 dark:border-gray-600 group-hover:border-blue-400 dark:group-hover:border-blue-500'
@@ -389,7 +389,7 @@ function App() {
               </div>
             </div>
 
-            {/* Education and Certification side by side on Desktop */}
+           
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-sm border border-gray-100 dark:border-gray-700 p-6 flex flex-col group hover:border-indigo-100 dark:hover:border-indigo-900/50 transition-colors duration-300">
                 <div className="flex justify-between items-center mb-4">
@@ -441,7 +441,6 @@ function App() {
 
       </main>
 
-      {/* Dynamic Edit Modal */}
       {editSection && (
         <div className="fixed inset-0 bg-black/50 dark:bg-black/70 z-50 flex items-center justify-center p-4 transition-colors">
           <div className="bg-white dark:bg-gray-800 rounded-2xl w-full max-w-2xl shadow-xl overflow-hidden animate-in fade-in zoom-in duration-200 transition-colors border border-gray-100 dark:border-gray-700">
@@ -480,7 +479,7 @@ function App() {
                     <textarea
                       value={editForm.bio}
                       onChange={(e) => setEditForm({ ...editForm, bio: e.target.value })}
-                      className="w-full border border-gray-200 dark:border-gray-600 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-700/50 focus:bg-white dark:focus:bg-gray-700 min-h-[100px]"
+                      className="w-full border border-gray-200 dark:border-gray-600 rounded-xl px-4 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-700/50 focus:bg-white dark:focus:bg-gray-700 min-h-62.5"
                     ></textarea>
                   </div>
                 </div>
@@ -490,7 +489,7 @@ function App() {
                   <textarea
                     value={formText}
                     onChange={(e) => setFormText(e.target.value)}
-                    className="w-full border border-gray-200 dark:border-gray-600 rounded-xl px-4 py-4 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-700/50 focus:bg-white dark:focus:bg-gray-700 min-h-[250px]"
+                    className="w-full border border-gray-200 dark:border-gray-600 rounded-xl px-4 py-4 font-mono text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-700/50 focus:bg-white dark:focus:bg-gray-700 min-h-62.5"
                   ></textarea>
                 </div>
               )}
